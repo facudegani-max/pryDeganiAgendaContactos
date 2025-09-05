@@ -23,16 +23,21 @@ namespace pryDeganiAgendaContactos
         int contador = 1;
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            vNombre= txtContacto.Text;
-            vTelefono= mtbTelefono.Text;
+            vNombre = txtContacto.Text;
+            vTelefono = mtbTelefono.Text;
 
-            String vResultado = contador +" " + "El contacto " + vNombre + " con telefono " + vTelefono + " fue cargado correctamente";
+            String vResultado = contador + " " + "El contacto " + vNombre + " con telefono " + vTelefono + " fue cargado correctamente";
             contador = contador + 1;
             lstContacto_Telefono.Items.Add(vResultado);
 
             txtContacto.Clear();
             mtbTelefono.Clear();
             txtContacto.Focus();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+           this.Close();
         }
     }
 }
