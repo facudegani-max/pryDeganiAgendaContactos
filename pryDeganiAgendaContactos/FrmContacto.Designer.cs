@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmContacto));
             lblContacto = new Label();
             lblTelefono = new Label();
             txtContacto = new TextBox();
@@ -141,6 +142,7 @@
             Controls.Add(panel1);
             Controls.Add(panel2);
             Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmContacto";
             Text = "Agenda ";
             panel1.ResumeLayout(false);
