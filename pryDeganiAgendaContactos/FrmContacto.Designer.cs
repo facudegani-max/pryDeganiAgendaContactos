@@ -145,6 +145,7 @@
             Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmContacto";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Agenda ";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -21,6 +21,7 @@ namespace pryDeganiAgendaContactos
         string vTelefono = "";
         string vResultado = "";
         int contador = 1;
+
         private void btnCargar_Click(object sender, EventArgs e)
         {
             vNombre = txtContacto.Text;
@@ -29,6 +30,15 @@ namespace pryDeganiAgendaContactos
             String vResultado = contador + " " + "El contacto " + vNombre + " con telefono " + vTelefono + " fue cargado correctamente";
             contador = contador + 1;
             lstContacto_Telefono.Items.Add(vResultado);
+
+            string[] nombre = new string[4];
+            string[] telefono = new string[4];
+
+            for (int i = 0; i < 4; i++)
+            {
+                nombre[i] = vNombre;
+                telefono[i] = vTelefono;
+            }
 
             txtContacto.Clear();
             mtbTelefono.Clear();
